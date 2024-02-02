@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 13%, rgba(0,212,255,1) 56%);
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Mario;
+    src: url(/fonts/RetroMario-Regular.otf);
+}
+
+h1 {
+    font-family: Mario;
+    font-size: 5rem;
+}
+
+.amarillo {
+    color: yellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.verde {
+    color: greenyellow;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.azul {
+    color:cornflowerblue
+}
+
+.capa0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.capa1 {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    z-index: 1;
+}
+
+.capa2 {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    z-index: 2;
+}
+
+.capa3 {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: calc(50% - 150px);
+    z-index: 3;
+}
